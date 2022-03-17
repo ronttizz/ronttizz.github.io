@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="School portfolio project" />
+    <meta name="author" content="Toni Nissinen" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- THERE IS A FAVICON BUG IN CHROME ITS NOT SHOWING ON LOCALHOST -->
+
+    <!-- FONT LINKING START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/25fca375f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONT LINKING ENDS -->
+
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-nav">
+        <h1 class="hero-name"><span id="name">Toni Nissinen</span></h1>
+        <nav>
+          <button id="mobileButton">
+            <span class="material-icons"> menu </span>
+          </button>
+          <ul id="links" class="hideMenu">
+            <li><a href="#projects" class="menulink">Projects</a></li>
+            <li><a href="#about" class="menulink">About me</a></li>
+            <li><a href="#skills" class="menulink">Skills</a></li>
+            <li><a href="./gallery.html" class="menulink">Gallery</a></li>
+            <li><a href="#contact" class="menulink">Contact</a></li>
+            <li>
+              <a href="https://www.bc.fi/" target="_blank" class="menulink"
+                >More about BCH</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero-banner">
+        <h1 class="hero-welcome">Welcome to my Portfolio Page</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects" class="column">
+        <h2>Projects</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="http://source.unsplash.com/JMwCe3w7qKk" alt="#" />
+            <h4>Project 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore
+              laudantium cupiditate eius ratione officiis?
+            </p>
+          </div>
+          <div class="card">
+            <img src="http://source.unsplash.com/KHSPGJ3zP0M" alt="#" />
+            <h4>Project 2</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore
+              laudantium cupiditate eius ratione officiis?
+            </p>
+          </div>
+          <div class="card">
+            <img src="http://source.unsplash.com/1sSfrozgiFk" alt="#" />
+            <h4>Project 3</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat labore
+              laudantium cupiditate eius ratione officiis?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="content">
+          <div class="mainImg">
+            <img src="http://source.unsplash.com/W8Qqn1PmQH0" alt="About Me" />
+          </div>
+          <div>
+            <h2>About me</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, atque omnis?
+              Quidem quo nobis tempore dignissimos cumque necessitatibus sunt vero
+              deserunt magni officiis, blanditiis laudantium non accusantium ratione!
+              Blanditiis ratione perspiciatis vel voluptate aperiam asperiores, ad magnam
+              vero quidem delectus rerum consequatur, optio pariatur voluptatibus eaque
+              facilis deserunt, mollitia facere.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="column">
+        <h2>Skills</h2>
+
+        <div class="card-container">
+          <div class="card">
+            <label for="html">
+              <i class="fa-brands fa-html5 fa-8x"></i>
+              HMTL
+            </label>
+            <progress id="html" value="90" max="100">90%</progress>
+          </div>
+          <div class="card">
+            <label for="css">
+              <i class="fa-brands fa-css3-alt fa-8x"></i>
+              CSS
+            </label>
+            <progress id="css" value="85" max="100">85%</progress>
+          </div>
+          <div class="card">
+            <label for="javascript">
+              <i class="fa-brands fa-js fa-8x"></i>
+              Javascript
+            </label>
+            <progress id="javascript" value="60" max="100">85%</progress>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <div>
+            <label for="msg-sender">Your Name</label>
+            <input type="text" name="name" id="msg-sender" size="30" />
+          </div>
+          <div>
+            <label for="msg-email">Your Email</label>
+            <input type="email" name="email" id="msg-email" size="30" />
+          </div>
+          <div>
+            <label for="msg-message">Your Message</label>
+            <textarea
+              name="message"
+              id="msg-message"
+              autocomplete="off"
+              placeholder="Your Message Here"
+              rows="4"
+              cols="21"
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit" name="send" id="msg-submit">SEND MESSAGE</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Image copyrights belong to their respective owners.</p>
+      <p>Toni Nissinen.</p>
+      <div id="toTopButton">
+        <span class="material-icons arrowUp"> forward </span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
